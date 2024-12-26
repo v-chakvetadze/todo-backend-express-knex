@@ -40,7 +40,7 @@ Name
 Description
 
 Create board  - POST   /board
-Update board  - PUT    /board/{boardId}
+Update board  - PATCH  /board/{boardId}
 Delete board  - DELETE /board/{boardId}
 Invite user   - POST   /board/{boardId}/inviteUser
 Set user role - POST   /board/{boardId}/setRole
@@ -63,7 +63,7 @@ Status [ 'ToDo', 'InProgress' , 'Finished' , 'Cancelled' ]
 BoardId
 
 Create task    - POST   /board/{boardId}/task
-Update task    - PUT    /board/{boardId}/task/{taskId}
+Update task    - PATCH  /board/{boardId}/task/{taskId}
 Delete task    - DELETE /board/{boardId}/task/{taskId}
 Get tasks      - GET    /board/{boardId}/task
 Get task by id - GET    /board/{boardId}/task/{taskId}
@@ -73,7 +73,7 @@ Id
 Content TEXT
 
 Create comment - POST   /board/{boardId}/task/{taskId}/comment
-Update comment - PUT    /board/{boardId}/task/{taskId}/comment/{commentId}
+Update comment - PATCH  /board/{boardId}/task/{taskId}/comment/{commentId}
 Get comments   - GET    /board/{boardId}/task/{taskId}/comment
 Delete comment - DELETE /board/{boardId}/task/{taskId}/comment/{commentId}
 
